@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UtilesNocturna</string>
+    <string name="factormultiplicacion">Factor Multiplicacion:</string>
+    <string name="DFocal">Distancia Focal:</string>
+    <string name="segundos">Segundos</string>
+    <string name="texposicion">Tiempo Max Exposicion</string>
+</resources>
