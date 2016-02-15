@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Estrellas">
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableRow
+            android:onClick="onClick"
+            android:id="@+id/calc_estrellas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            >
+
+            <ImageButton
+                android:onClick="onClick"
+                android:layout_width="10dp"
+                android:clickable="true"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:contentDescription="Estrellas sin estelas"
+                android:text="Estrellas sin estelas"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icono_estrellas"
+                android:layout_weight="1">
+            </ImageButton>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:text="Estrellas sin estelas"
+                android:layout_weight="1">
+            </TextView>
+
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+</LinearLayout>
