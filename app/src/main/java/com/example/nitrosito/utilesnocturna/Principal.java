@@ -1,40 +1,31 @@
 package com.example.nitrosito.utilesnocturna;
 
+import android.app.Activity;
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
+/**
+ * Created by nitrosito on 15/02/16.
+ */
 public class Principal extends AppCompatActivity implements View.OnClickListener {
-    EditText infmulti;
-    EditText indfocal;
-    TextView maxtiempo;
-    Button calcular;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_principal);
-        infmulti = (EditText) findViewById(R.id.fmultiplicacion);
-        indfocal = (EditText) findViewById(R.id.dfocal);
-        maxtiempo = (TextView) findViewById(R.id.maxexpo);
-        calcular = (Button) findViewById(R.id.texposicion);
-
-        calcular.setOnClickListener(this);
+        setContentView(R.layout.menuprincipal);
+        View calc_estrellas = findViewById(R.id.calc_estrellas);
+        calc_estrellas.setOnClickListener(this);
     }
 
-    public void onClick(View control_pulsado) {
-        double multiplicador = Double.valueOf(infmulti.getText().toString());
-        double distancia = Double.valueOf(indfocal.getText().toString());
-        double res = 500/(multiplicador * distancia);
-        String ress = String.valueOf(res);
-        maxtiempo.setText(String.format("%.2f", res));
-        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(control_pulsado.getWindowToken(), 0);
+    public void onClick(View estrellas_pulsado) {
+        startActivity(new Intent(Principal.this,Estrellas.class));
     }
-
 }
