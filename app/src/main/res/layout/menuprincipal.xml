@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Estrellas">
+    tools:context=".Principal">
 
 
 
@@ -14,7 +14,7 @@
 
 
         <TableRow
-            android:onClick="onClick"
+            android:onClick="tiempoestrellas"
             android:id="@+id/calc_estrellas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
             >
 
             <ImageButton
-                android:onClick="onClick"
+                android:onClick="tiempoestrellas"
                 android:layout_width="10dp"
                 android:clickable="true"
                 android:layout_height="100dp"
@@ -47,6 +47,39 @@
 
         </TableRow>
 
+        <TableRow
+            android:onClick="hiperfocal"
+            android:id="@+id/calc_hiperfocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            >
+
+            <ImageButton
+                android:onClick="hiperfocal"
+                android:layout_width="10dp"
+                android:clickable="true"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:contentDescription="Distancia Hiperfocal"
+                android:text="Distancia Hiperfocal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icono_estrellas"
+                android:layout_weight="1">
+            </ImageButton>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:text="Distancia Hiperfocal"
+                android:layout_weight="1">
+            </TextView>
+
+        </TableRow>
 
 
 

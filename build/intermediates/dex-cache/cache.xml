@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/nitrosito/foh/Fotografia_Nocturna_Android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/home/nitrosito/foh/Fotografia_Nocturna_Android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_5a3650b8dcb5f12aae9ffee65e4d06c69c2825a7.jar" />
+    </item>
+    <item
+        jar="/home/nitrosito/foh/Fotografia_Nocturna_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/home/nitrosito/foh/Fotografia_Nocturna_Android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_4ff2985c8a66396b465f9ea6ac46f29ab359276c.jar" />
+    </item>
+    <item
+        jar="/home/nitrosito/foh/Fotografia_Nocturna_Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/home/nitrosito/foh/Fotografia_Nocturna_Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_2631e112d4ad1d96948f2b69c73f098c22ee87d1.jar" />
+    </item>
+    <item
+        jar="/home/nitrosito/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/nitrosito/foh/Fotografia_Nocturna_Android/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_44a89aea06a95e6b8f55573bfdf00ce7a608005f.jar" />
+    </item>
+    <item
+        jar="/home/nitrosito/foh/Fotografia_Nocturna_Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/home/nitrosito/foh/Fotografia_Nocturna_Android/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_b701043c4f8d163ffcc41c24a938d629a3acbb65.jar" />
+    </item>
+    <item
+        jar="/home/nitrosito/foh/Fotografia_Nocturna_Android/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/home/nitrosito/foh/Fotografia_Nocturna_Android/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_b2e43c043f9a56167e3a2ba2579af5f0a4222bb3.jar" />
+    </item>
+
+</items>

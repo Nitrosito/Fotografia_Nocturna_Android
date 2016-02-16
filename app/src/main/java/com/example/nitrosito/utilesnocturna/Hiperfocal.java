@@ -8,33 +8,32 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-public class Estrellas extends AppCompatActivity implements View.OnClickListener {
+public class Hiperfocal extends AppCompatActivity {
     EditText infmulti;
     EditText indfocal;
-    TextView maxtiempo;
+    TextView resultado;
+    EditText diafragma;
     Button calcular;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_testrellas);
+        setContentView(R.layout.activity_hiperfocal);
         infmulti = (EditText) findViewById(R.id.fmultiplicacion);
         indfocal = (EditText) findViewById(R.id.dfocal);
-        maxtiempo = (TextView) findViewById(R.id.maxexpo);
-        calcular = (Button) findViewById(R.id.texposicion);
-        calcular.setOnClickListener(this);
+        resultado = (TextView) findViewById(R.id.reshiperfocal);
+        diafragma = (EditText) findViewById(R.id.diafragma);
     }
 
-    public void onClick(View control_pulsado) {
+    public void calcularHiperfocal(View control_pulsado) {
         double multiplicador = Double.valueOf(infmulti.getText().toString());
         double distancia = Double.valueOf(indfocal.getText().toString());
-        double res = 500/(multiplicador * distancia);
-        String ress = String.valueOf(res);
-        maxtiempo.setText(String.format("%.2f", res));
+        double vdiafragma = Double.valueOf(diafragma.getText().toString());
+        double circuloconfusion = (0.25 / multiplicador);
+        double res = ((distancia*distancia)/(vdiafragma * circuloconfusion))/100;
+        resultado.setText(String.format("%.4f", res));
         InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(control_pulsado.getWindowToken(), 0);
     }
 
 }
-

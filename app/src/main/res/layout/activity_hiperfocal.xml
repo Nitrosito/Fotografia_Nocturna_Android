@@ -4,7 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Estrellas">
+
+
+
+    tools:context=".Hiperfocal">
 
     <TextView
         android:layout_marginTop="20dp"
@@ -12,7 +15,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_gravity="center"
-        android:text="@string/estrellassinestelas"
+        android:text="@string/hiperfocal"
         android:textSize="15sp"
         />
 
@@ -70,7 +73,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/dfocal"
+            android:text="@string/DFocal"
             android:textSize="15sp"
             android:layout_weight="2"
             />
@@ -95,20 +98,56 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/diafragma"
+            android:textSize="15sp"
+            android:layout_weight="2"
+            />
+
+        <EditText
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/diafragma"
+            android:hint="@string/decimal0"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="/f"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
 
     <Button
+        android:onClick="calcularHiperfocal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/texposicion"
-        android:id="@+id/texposicion" />
+        android:text="Calcular Distancia Hiperfocal"
+        android:id="@+id/bhiperfocl"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/maxexpo"
+        android:id="@+id/reshiperfocal"
         android:layout_gravity="center"
         android:text="00"
         tools:ignore="HardcodedText" />
@@ -118,7 +157,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/segundos"
+        android:text="@string/metros"
         android:id="@+id/textView4"
         />
 
